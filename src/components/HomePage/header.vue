@@ -1,7 +1,11 @@
 <template>
   <div class="header">
-        <div class="tit-auto">重庆 Music</div>
+    <div class="tit-auto">
+      <div class="icon"></div>
+      <div class="icon-txt">黑龙江 Music</div>
     </div>
+    <div class="icon-right"></div>
+  </div>
 </template>
 
 <script>
@@ -16,15 +20,49 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='less'>
-  .header{
-    background: #222;
+@color: #ec1b66;
+@bac-color: #222;
+.tofloat(@fl: left) {
+  // 给float封装一下
+  float: @fl;
+}
+
+.head-img(@url) {
+  // header导航栏的图片的样式
+  height: 2rem;
+  background: url(@url) no-repeat;
+  background-size: 100% 100%;
+  padding-top: 0.325rem;
+}
+
+.header {
+  background: @bac-color;
+  height: 2.75rem;
+  color: @color;
+  line-height: 2.75rem;
+  position: relative;
+  .tit-auto {
+    width: 50%;
     height: 2.75rem;
-    color: #ec1b66;
-    line-height:2.75rem;
-    .tit-auto{
-        width: 50%;
-        text-align: center;
-        margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    .icon {
+      width: 20%;
+      .head-img("../../assets/imgs/panda@3x.png");
+      .tofloat();
+    }
+    .icon-txt {
+      width: 80%;
+      .tofloat(right); // float: left;
     }
   }
+  .icon-right {
+    width: 10%;
+    .head-img("../../assets/imgs/panda@3x.png");
+    position: fixed;
+    top: 0;
+    right: 1.25rem;
+    color: black;
+  }
+}
 </style>
