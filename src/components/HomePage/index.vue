@@ -1,8 +1,13 @@
 <template>
-    <pageheader></pageheader>
+  <div>
+      <pageheader></pageheader>
+      <tab></tab>
+      <router-view></router-view>
+  </div>
 </template>
 <script>
 import pageheader from '@/components/HomePage/header'
+import tab from '@/components/HomePage/tab'
 // import pageheader from '@/components/HelloWorld'
 export default {
   data () {
@@ -11,7 +16,8 @@ export default {
     }
   },
   components: {
-    pageheader
+    pageheader,
+    tab
   }
 }
 </script>
