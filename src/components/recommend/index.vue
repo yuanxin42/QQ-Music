@@ -117,6 +117,7 @@ export default {
   .recommend-lunbo {
     width: 100%;
     height: 9.35rem; // height: auto;
+    overflow: hidden;
     position: relative;
     li {
       width: 100%;
@@ -126,6 +127,7 @@ export default {
         width: 100%;
         img {
           width: 100%;
+          height: 9.35rem;;
         }
       }
     }
@@ -154,7 +156,7 @@ export default {
     line-height: 3rem;
     text-align: center;
     color: @head-color;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
   }
   .itemlist {
