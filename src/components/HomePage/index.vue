@@ -1,8 +1,8 @@
 <template>
   <div>
       <pageheader></pageheader>
-      <tab></tab>
-      <router-view></router-view>
+       <tab></tab>
+       <router-view></router-view>
   </div>
 </template>
 <script>

@@ -20,13 +20,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='less'>
-@color: #ec1b66;
-@bac-color: #222;
-.tofloat(@fl: left) {
-  // 给float封装一下
-  float: @fl;
-}
-
+@import "../../assets/css/common.less";
 .head-img(@url) {
   // header导航栏的图片的样式
   height: 2rem;
@@ -38,7 +32,7 @@ export default {
 .header {
   background: @bac-color;
   height: 2.75rem;
-  color: @color;
+  color: @head-color;
   line-height: 2.75rem;
   position: relative;
   .tit-auto {

@@ -27,22 +27,21 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+@import "../../assets/css/common.less";
 @tabheight: 44px;
-@color: rgba(255,255,255,0.5);;
-@bac-color: #222;
 .tab {
     width: 100%;
     display: flex;
     height: @tabheight;
     line-height: @tabheight;
     background: @bac-color;
-    color: @color;
+    color: @letter-color;
     .tab-item {
         flex: 1;
         text-align: center;
-        &:active{
-            color: blue;
-        }
+    }
+    .router-link-active{
+        color: @head-color;
     }
 }
 </style>
