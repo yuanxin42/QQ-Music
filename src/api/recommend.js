@@ -4,7 +4,7 @@ import {
   options
 } from './config'
 import axios from 'axios'
-// axios推荐接口
+// axios推荐接口  1111
 // 利用jsonp获取数据
 // 获取轮播图数据
 export function getRecommend () {
