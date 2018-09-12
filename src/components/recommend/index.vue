@@ -162,6 +162,7 @@ export default {
   .itemlist {
     width: 100%;
     height: 4.5rem;
+    overflow: hidden;
     .icon {
       width: 25%;
       text-align: center;
