@@ -53,7 +53,7 @@ export default {
   .icon-right {
     width: 10%;
     .head-img("../../assets/imgs/panda@3x.png");
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 1.25rem;
     color: black;
