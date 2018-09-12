@@ -1,7 +1,8 @@
 # qq-music
 
-> 移动端vue开发qq音乐
+# 移动端vue开发qq音乐
 
+![Image text](https://github.com/yuanxin666/QQ-Music/blob/master/imgs/1.png)
 ## Build Setup
 
 ``` bash
